@@ -1,0 +1,1444 @@
+<!doctype html>
+<html lang=en>
+
+<!-- Mirrored from wickbot.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Mar 2021 20:32:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Wick Bot</title>
+<link href=index.html rel=canonical>
+<meta content=Wick property=og:title>
+<meta content="The official website for Wick, the best Discord security bot." property=og:description>
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<meta content="Wick Bot" name=subject>
+<meta content="Wick Bot, the best Discord security bot available for free. It is an anti nuke, anti raid, anti spam and a verification bot that comes with advanced moderation. Wick also has very useful utility commands." name=description>
+<meta content="wick, bot, wickbot, discord, discordbot, antinuke, anti nuke, anti-nuke, antiraid, anti raid, anti, raid, nuke, antispam, anti-spam, spam, security, anti wizz, wiz, nuked, raided, spammed, verification, verify, captcha, antiselfbots, anti-selfbots, selfbot, selfbots, discord raids, raids, nuking, raiding, spamming" name=keywords>
+<meta content="index, follow" name=robots>
+<meta content=#1f88ff name=theme-color>
+<meta content=https://wickbot.com property=og:url>
+<meta content=https://wickbot.com/wick.png property=og:image>
+<meta content=64 property=og:image:width>
+<meta content=64 property=og:image:height>
+<link href=wick.png rel=apple-touch-icon>
+<script src=../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js type="df09aa88f9ecb5d607d67e58-text/javascript"></script>
+<link href=../cdn.jsdelivr.net/npm/fomantic-ui%40nightly/dist/semantic.min.css rel=stylesheet type=text/css>
+<script src=../cdn.jsdelivr.net/npm/fomantic-ui%40nightly/dist/semantic.min.js type="df09aa88f9ecb5d607d67e58-text/javascript"></script>
+<script src=../cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js type="df09aa88f9ecb5d607d67e58-text/javascript"></script>
+<script src=../cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js type="df09aa88f9ecb5d607d67e58-text/javascript"></script>
+<script src=header%400.0.4.js type="df09aa88f9ecb5d607d67e58-text/javascript"></script>
+<script src=helpers-timers%401.2.4.js type="df09aa88f9ecb5d607d67e58-text/javascript"></script>
+<script src=../cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js type="df09aa88f9ecb5d607d67e58-text/javascript"></script>
+<link href=generalHeader%400.1.6.css rel=stylesheet type=text/css>
+<link href=https://fonts.gstatic.com/ rel=preconnect crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel=stylesheet>
+<div class="full-screen ui inverted secondary menu" style="visibility: hidden;display:none;">
+<div class="header item">
+<img style="border-radius: 100%" src=wick.png alt="Wick Logo" height=40px width=40px>
+</div>
+<a class=item href=index.html>
+<i class="icon home"></i> Home
+</a>
+<div class=item>
+<a class="ui inverted secondary disabled button" href=index.html>
+<i class="icon edit outline"></i> Dashboard
+</a>
+<div class="ui orange mini label" style="position: absolute;bottom:-2px;right: 3px;">LOGIN
+</div>
+</div>
+<a class=item href=status.html>
+<i class="icon wifi"></i> Status
+</a>
+<a class=item href=https://discord.gg/8C972nY>
+<i class="icon headphones"></i> Support
+</a>
+<div class="ui dropdown item" id=moreDrop>
+<i class="icon plus square"></i> More
+<i class="dropdown icon"></i>
+<div class=menu>
+<a class=item href=https://docs.wickbot.com/>Documentation</a>
+<a class=item href=team.html>Team</a>
+<div class=item style="background: #3a6186;
+            background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+            background: linear-gradient(to right, #89253e, #3a6186);" id=upvoteWick>Upvote Wick</div>
+<a class=item href=https://bots.ondiscord.xyz/bots/536991182035746816/review rel="noopener noreferrer" target=_blank>Review Wick</a>
+</div>
+</div>
+<div class="right menu">
+<div class=item>
+<a class="ui orange animated button" href=premium.html>
+<div class="visible content"><i class="icon gem"></i> Premium</div>
+<div class="hidden content">
+<i class="icon gem"></i>
+</div>
+</a>
+</div>
+<div class=item>
+<a class="ui primary button" href=https://discord.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fwickbot.com%2Fwauth%2Fcallback&amp;scope=identify%20guilds&amp;code_challenge=6RMXGGmwoqZhL0lSF6VGOpxhp2hehqGVkhnaBbwwZ-E&amp;code_challenge_method=S256&amp;state=tGi9vbXyP0YAwq8k1kN6J5I6&amp;client_id=536991182035746816>
+<i class="discord icon"></i> Login via Discord</a>
+</div>
+</div>
+</div>
+<div class="small-screen ui inverted secondary menu" style=display:flex;>
+<div class="header item" style="left: 15px;">
+<img style="border-radius: 100%" src=wick.png alt="Wick Logo" height=40px width=40px>
+</div>
+<div class="right menu">
+<div class="header item" style="right: 15px;">
+<div class="ui dropdown" style="color: rgb(59, 59, 59)" id=mobileHeaderMenu>
+<i class="bars white icon" style="color: white !important;"></i>
+<div class=menu style="right: 0;left: auto;">
+<a class=item href=index.html>
+<i class="icon home"></i> Home
+</a>
+<a class=item href=status.html>
+<i class="icon wifi"></i> Status
+</a>
+<a class=item href=https://discord.gg/8C972nY>
+<i class="icon headphones"></i> Support
+</a>
+<a class=item href=premium.html style="color: white !important; 
+                                        background: #f12711 !important;
+                                        background: -webkit-linear-gradient(to right, #f5af19, #f12711) !important;
+                                        background: linear-gradient(to right, #f5af19, #f12711) !important;">
+<i class="icon gem"></i> Premium
+</a>
+<a class=item href=https://discord.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fwickbot.com%2Fwauth%2Fcallback&amp;scope=identify%20guilds&amp;code_challenge=jfIuWEO_-F6zTyQAlmmR0wCgbO-z1LHsDu4QhSiPStk&amp;code_challenge_method=S256&amp;state=zQ0ueDCBMZt9QVewTZZLEKUO&amp;client_id=536991182035746816>
+<i class="discord icon"></i> Login via Discord</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ui basic modal" id=upvote-modal>
+<div class="ui placeholder segment" style="color: #f7f7f7 !important;background: #3a6186;
+            background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+            background: linear-gradient(to right, #89253e, #3a6186);">
+<div class="ui four column very relaxed stackable grid">
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<p style="font-size: 25px;">
+TOP.GG
+</p>
+<a class="ui big button" href=https://top.gg/bot/536991182035746816/vote>
+<i class="icon thumbs up"></i>Upvote
+</a>
+</div>
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<p style="font-size: 25px;">
+DBL
+</p>
+<a class="ui big button" href=https://discordbotlist.com/bots/wick/upvote>
+<i class="icon thumbs up"></i>Upvote
+</a>
+</div>
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<p style="font-size: 25px;">
+BOTLIST.SPACE
+</p>
+<a class="ui big button" href=https://botlist.space/bot/536991182035746816/>
+<i class="icon thumbs up"></i>Upvote
+</a>
+</div>
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<p style="font-size: 25px;">
+BFD
+</p>
+<a class="ui big button" href=https://botsfordiscord.com/bot/536991182035746816/vote>
+<i class="icon thumbs up"></i>Upvote
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="ui small longer modal" id=getIntelModalDiv>
+<i class="close icon"></i>
+<div class=header id=getIntelModalTitle>
+</div>
+<div class="scrolling content" id=getIntelModalContent>
+</div>
+<div class=actions>
+<div class="ui animated approve secondary button" tabindex=0>
+<div class="visible content">Understood</div>
+<div class="hidden content">
+<i class="icon check square"></i>
+</div>
+</div>
+</div>
+</div>
+<link href=home%400.1.0.css rel=stylesheet type=text/css>
+<script src=home%400.0.4.js type="df09aa88f9ecb5d607d67e58-text/javascript"></script>
+<script async src='cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<div class="ui floating green icon message" style="margin: 0 auto;
+    margin-top: calc(24px + (32 - 24) * (100vw - 400px) / (800 - 400)) !important;
+    max-width: 70%;
+    min-width: 50%;
+    justify-content: center;">
+<i class="icon lightbulb outline"></i>
+<div class=content>
+<div class=header>
+Dashboard Release!
+</div>
+<p>
+The long awaited dashboard has been released! Login and setup Wick perfectly in your server and make use of awesome tools that help you secure your server.
+</p>
+</div>
+</div>
+<div class=mainfbox>
+<div class=left>
+<h1 class=majorTitle>Wick Bot, the best Discord security bot!</h1>
+<h2 style="text-align: left;">
+<img class="ui avatar image mainfboxI" src="../cdn.discordapp.com/emojis/6608293253139661123860.png?v=1" alt="Anti Nuke">
+<span class=mainfboxF>
+Anti Nuke
+</span>
+<span class=mainfboxFSUB>
+Secure your server and stop anyone from trying to nuke / wiz it!
+</span>
+<br>
+<img class="ui avatar image mainfboxI" src="../cdn.discordapp.com/emojis/6608161636218306663860.png?v=1" alt="Anti Raid &amp; Spam">
+<span class=mainfboxF>
+Anti Raid &amp; Spam
+</span>
+<span class=mainfboxFSUB>
+Block raiders and mass spammers efficiently!
+</span>
+<br>
+<img class="ui avatar image mainfboxI" src="../cdn.discordapp.com/emojis/6607900948771635323860.png?v=1" alt=Verification>
+<span class=mainfboxF>
+Verification
+</span>
+<span class=mainfboxFSUB>
+Verify new members with Wick&#39;s undetectable captcha!
+</span>
+<br>
+<img class="ui avatar image mainfboxI" src="../cdn.discordapp.com/emojis/6608293234349178883860.png?v=1" alt=Moderation>
+<span class=mainfboxF>
+Moderation
+</span>
+<span class=mainfboxFSUB>
+Have the best advanced yet easy moderation commands and an auto-mod at your service
+</span>
+<br>
+<img class="ui avatar image mainfboxI" src="../cdn.discordapp.com/emojis/6607895921606001033860.png?v=1" alt="More features">
+<span class=mainfboxF>And a lot more!</span>
+</h2>
+<div class="ui big buttons" style="text-align: center;justify-content: center;margin-top:15px">
+<a class="ui animated fade green button" href="https://discord.com/oauth2/authorize?client_id=536991182035746816&amp;scope=bot&amp;permissions=8">
+<div class="visible content"> <i class="icon plus"></i>Add Wick</div>
+<div class="hidden content">
+<i class="icon plus"></i>
+</div>
+</a>
+</div>
+</div>
+<div class=right>
+<img height=300px alt="Wick King Logo" src=wickking.png width=300px id=mainlogo>
+</div>
+</div>
+<h1 class=majorTitle>
+Reviews (<span class="ui inverted default blue text" id=reviewsPercentage>
+..% Positive
+</span>)
+</h1>
+<h2 class=wickMainDesc>These are some random reviews picked for you!</h2>
+<div style="width: 90%; margin: 0 auto;margin-top:20px;margin-bottom:40px;justify-content: center; justify-items: center;">
+<div id=reviewsContainer>
+<div style="height: 150px;color: white !important;">
+<div style="height: 100%;padding-top: 30px;">
+<div style="margin: 0 auto;text-align: center;">
+<div class="ui active centered inline fast huge loader"></div>
+Loading Reviews;
+</div>
+</div>
+</div>
+</div>
+<div style="float: right;text-align: left;min-width: 250px;">
+<div class="ui middle aligned animated inverted list">
+<div class=item>
+<a class=content href=https://discord.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fwickbot.com%2Fwauth%2Fcallback&amp;scope=identify%20guilds&amp;code_challenge=Q5lrU6alqYxdk1dpxmVjUcQtY9l2b8ZYijjFgPJurvU&amp;code_challenge_method=S256&amp;state=toTmZGt7U3VNjBmsoEhstACF&amp;client_id=536991182035746816>
+<div class=header>
+<strong><span class="ui inverted default green text"><i class="icon plus"></i>
+Add your own review!</span></strong>
+</div>
+</a>
+</div>
+<div class=item>
+<a class=content href=https://bots.ondiscord.xyz/bots/536991182035746816>
+<div class=header>
+<span class="ui inverted default red text"><i class="icon times"></i> I don't trust these reviews!</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<h1 class=majorTitle>Features</h1>
+<div class=featuresfbox>
+<div class=left>
+<h3 class="ui header">
+<img class="ui medium image lazy" data-src="../cdn.discordapp.com/emojis/6608293253139661123860.png?v=1">
+<div class=content style="color: white !important">
+Anti Nuke
+<span class="ui mini compact green button" style="pointer-events: none;">FREE</span>
+</div>
+</h3>
+<div style="text-align: left;">
+Wick is the very first bot on Discord that came up with the anti nuke concept. And it has been perfected over time and now it&#39;s an absolute beast that is still receiving improvements. Wick will protect your server from getting damaged. You will also be able to tweak the anti nuke filters to your liking!
+<br>
+<div class="ui inverted relaxed list">
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6608161635923394673860.png?v=1">
+Mass Kicks/Bans
+</div>
+<div class=description>
+If your admin decides to kick/ban your members and get rid of all the members you worked so hard to get, Wick will instantly stop them before any further and will add them to Quarantine until you are back
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6655700935054458913860.png?v=1">
+Mass Channel Deletions/Creations
+</div>
+<div class=description>
+A rogue admin can attempt at deleting all your server channels with all them nostalgic messages sent in them, or they can just mass create channels to flood your server. Worry not, Wick will not allow that!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6655700953214484583860.png?v=1">
+Mass Role Deletions/Creations
+</div>
+<div class=description>
+Wick will punish anyone trying to deleting all your server roles or trying to mass create 200 roles to ruin your server!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6655700958081188383860.png?v=1">
+Mass Webhooks Deletions/Creations
+<span class="mini compact ui orange button">PREMIUM</span>
+</div>
+<div class=description>
+Webhooks are very dangerous. 10 webhooks only can turn your server into a living hell. Wick will monitor webhook creation/deletion to avoid any issue
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6655700957493985383860.png?v=1">
+Mass Emojis Deletions/Creations
+<span class="mini compact ui orange button">PREMIUM</span>
+</div>
+<div class=description>
+Perhaps you have some precious emojis you dont want to have them deleted? Perhaps you have Global Emojis? Wick got you
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=right>
+<div class="ui inverted segment" style="text-align: left !important;">
+<div class="ui inverted list" style="text-align: left !important;">
+<div class=item style=position:relative;>
+<img class="ui avatar image" style="position:absolute;
+                                              top:2px;
+                                              left:0;" src="../cdn.discordapp.com/emojis/6608161635923394673860.png?v=1">
+<div class=content style=margin-left:30px;>
+<div class=header>
+Member Kicked
+</div>
+<div class=description>
+<div class="ui image grey small label" style="margin: 1px;">
+<img alt=Mobilfan#1234 src="https://cdn.discordapp.com/avatars/514873754178945044/a_fddf546f37f3d7048042ccd037312e63.webp?size=64">
+Mobilfan
+</div>
+has been
+<span class="ui error text">kicked</span>
+by
+<div class="ui image red small label" style="margin: 1px;">
+<img alt=Mabelyn#6256 src="https://cdn.discordapp.com/avatars/263791409436295168/b6b3a347ea1767ecbdd376688392c6a3.webp?size=64">
+Mabelyn
+</div>
+<i>
+10 seconds ago
+</i>.
+</div>
+</div>
+</div>
+<div class=item style=position:relative;>
+<img class="ui avatar image" style="position:absolute;
+                                              top:2px;
+                                              left:0;" src="../cdn.discordapp.com/emojis/6608161635923394673860.png?v=1">
+<div class=content style=margin-left:30px;>
+<div class=header>
+Member Kicked
+</div>
+<div class=description>
+<div class="ui image grey small label" style="margin: 1px;">
+<img alt="rm rf#0145" src="https://cdn.discordapp.com/avatars/568812682463936562/e001c643376e3bacada146cda9b3c85c.webp?size=64">
+rm rf
+</div>
+has been
+<span class="ui error text">kicked</span>
+by
+<div class="ui image red small label" style="margin: 1px;">
+<img alt=Mabelyn#6256 src="https://cdn.discordapp.com/avatars/263791409436295168/b6b3a347ea1767ecbdd376688392c6a3.webp?size=64">
+Mabelyn
+</div>
+<i>
+7 seconds ago
+</i>.
+</div>
+</div>
+</div>
+<div class=item style=position:relative;>
+<img class="ui avatar image" style="position:absolute;
+                                              top:2px;
+                                              left:0;" src="../cdn.discordapp.com/emojis/6608161635923394673860.png?v=1">
+<div class=content style=margin-left:30px;>
+<div class=header>
+Member Kicked
+</div>
+<div class=description>
+<div class="ui image grey small label" style="margin: 1px;">
+<img alt=ADuckOnQuack#1234 src="https://cdn.discordapp.com/avatars/604561497376555008/adf2da97f512953ce48c46acee596289.webp?size=64">
+ADuckOnQuack
+</div>
+has been
+<span class="ui error text">kicked</span>
+by
+<div class="ui image red small label" style="margin: 1px;">
+<img alt=Mabelyn#6256 src="https://cdn.discordapp.com/avatars/263791409436295168/b6b3a347ea1767ecbdd376688392c6a3.webp?size=64">
+Mabelyn
+</div>
+<i>
+just now
+</i>.
+</div>
+</div>
+</div>
+<div class=item style=position:relative;>
+<img class="ui avatar image" style="position:absolute;
+                                              top:2px;
+                                              left:0;" src="../cdn.discordapp.com/emojis/6608293253139661123860.png?v=1">
+<div class=content style=margin-left:30px;>
+<div class=header>
+Member Quarantined
+</div>
+<div class=description>
+<div class="ui image red small label" style="margin: 1px;">
+<img alt=Mabelyn#6256 src="https://cdn.discordapp.com/avatars/263791409436295168/b6b3a347ea1767ecbdd376688392c6a3.webp?size=64">
+Mabelyn
+</div>
+has been
+<span class="ui success text">quarantined</span>
+by
+<div class="ui image small label" style="margin: 1px;">
+<img alt=Wick src="wick9ab4.png?size=64">
+Wick
+</div>
+<i>
+just now
+</i>.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=featuresfbox>
+<div class=left>
+<h3 class="ui header">
+<img class="ui medium image lazy" data-src="../cdn.discordapp.com/emojis/6608161638567116813860.png?v=1">
+<div class=content style="color: white !important">
+Auto Mod
+<span class="ui mini compact green button" style="pointer-events: none;">FREE</span>
+</div>
+</h3>
+<div style="text-align: left;">
+Wick uses a special heat algorithm that will help you fight spammers without harming your regular members. It will silence any member trying to disturb your channels by spamming messages, spamming @mentions or sending Invite Links and a lot more!
+<br>
+<div class="ui inverted relaxed list">
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6607899364458496103860.png?v=1">
+Anti Spam
+</div>
+<div class=description>
+All types of spamming are monitored: Mentions spam, Regular message spam, repetitive message spam, emojis spam, walls of text spam, images/embeds spam and more
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6608161631267717333860.png?v=1">
+Anti Advertisement
+</div>
+<div class=description>
+You can make Wick punish members posting discord server invites of others servers! You can still also have your partnering channels!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6607898726002851843860.png?v=1">
+Anti NSFW Websites
+</div>
+<div class=description>
+Wick has a large collection of regularly-updated NSFW websites. You can make Wick punish members posting NSFW links in non-NSFW channels!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6607895926682419213860.png?v=1">
+Malicious Websites Prevention
+</div>
+<div class=description>
+Wick is very good at detecting Phishing links, IP-Grabbers and even some shortners.
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6607896820655063053860.png?v=1">
+Inactivity
+<span class="mini compact ui orange button">PREMIUM</span>
+</div>
+<div class=description>
+Wick will make sure that your general channel once inactive becomes slow spam-free. People who try to outsmart the bot will be punished.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=right>
+<div class="ui inverted segment" style="text-align: left !important;">
+<div class="ui inverted list">
+<div class=item style=position:relative;>
+<img class="ui avatar image" style="position:absolute;
+                                              top:2px;
+                                              left:0;" src="https://cdn.discordapp.com/avatars/716281078586802226/8d768ce8d18903d7c5cc76914e2427b3.webp?size=128" alt="The Nance#0266">
+<div class=content style=margin-left:30px;>
+<div class=header><span class="ui grey text" style="font-size: 16px;">
+The Nance
+</span> <span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span></div>
+<div class=description>HAHAHAHAHAHAA IM SPAMMING WOOO</div>
+</div>
+</div>
+<div class=item style=position:relative;>
+<img class="ui avatar image" style="position:absolute;
+                                              top:2px;
+                                              left:0;" src="https://cdn.discordapp.com/avatars/716281078586802226/8d768ce8d18903d7c5cc76914e2427b3.webp?size=128" alt="The Nance#0266">
+<div class=content style=margin-left:30px;>
+<div class=header><span class="ui grey text" style="font-size: 16px;">
+The Nance
+</span> <span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span></div>
+<div class=description>HAHAHAHAHAHAA IM SPAMMING WOOO</div>
+</div>
+</div>
+<div class=item style=position:relative;>
+<img class="ui avatar image" style="position:absolute;
+                                              top:2px;
+                                              left:0;" src="https://cdn.discordapp.com/avatars/716281078586802226/8d768ce8d18903d7c5cc76914e2427b3.webp?size=128" alt="The Nance#0266">
+<div class=content style=margin-left:30px;>
+<div class=header><span class="ui grey text" style="font-size: 16px;">
+The Nance
+</span> <span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span></div>
+<div class=description>HAHAHAHAHAHAA IM SPAMMING WOOO</div>
+</div>
+</div>
+<div class=item style=position:relative;>
+<img class="ui avatar image" style="position:absolute;
+                                              top:2px;
+                                              left:0;" src="wick9ab4.png?size=64" alt=Wick>
+<div class=content style=margin-left:30px;>
+<div class=header><span class="ui yellow text" style="font-size: 16px;">Wick</span> <span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span></div>
+<div class=description>
+<div class="ui inverted segment" style="border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: orange;">
+<div class="ui header">
+<img class="ui avatar tiny image" src="https://cdn.discordapp.com/avatars/716281078586802226/8d768ce8d18903d7c5cc76914e2427b3.webp?size=64" alt="The Nance#0266">
+<i><span style="font-weight: normal">
+The Nance has been silenced for 30m!
+</span></i>
+</div>
+<div class="ui description" style=margin-top:5px;>
+The Nance#0266 | 716281078586802226
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ui inverted disabled fluid input">
+<input placeholder="You do not have the permission to send messages in this channel.">
+</div>
+</div>
+</div>
+</div>
+<div class=featuresfbox>
+<div class=left>
+<h3 class="ui header">
+<img class="ui medium image lazy" data-src="../cdn.discordapp.com/emojis/6607900948771635323860.png?v=1">
+<div class=content style="color: white !important">
+Verification
+<span class="ui mini compact green button" style="pointer-events: none;">FREE</span>
+</div>
+</h3>
+<div style="text-align: left;">
+Members joining need to first pass Wick&#39;s captcha before they can enter and chat in the server. Wick has a unique verification method that is very efficient at blocking out bots! You can also make it target everyone or just suspicious accounts!
+<br>
+<div class="ui inverted relaxed list">
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6608161635418767463860.png?v=1">
+Target
+</div>
+<div class=description>
+You can make Wick verify any member joining or only members Wick finds &lt;suspicious&gt;!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6607899369827205253860.png?v=1">
+Reverification
+</div>
+<div class=description>
+Your members can be able to reverify after failing the initial verification anytime!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6608293234351800323860.png?v=1">
+Quarantine Bots
+</div>
+<div class=description>
+You can make Wick add bots added to Quarantine until you are back! This is helpful to avoid nukes/raids.
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6607895926682419213860.png?v=1">
+Custom Captcha
+<span class="mini compact ui orange button">PREMIUM</span>
+</div>
+<div class=description>
+You can customize the captcha to your liking! Build your own captcha!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6607896820655063053860.png?v=1">
+Captcha Regeneration
+<span class="mini compact ui orange button">PREMIUM</span>
+</div>
+<div class=description>
+If people really hate you, they can pay manual captcha solvers to bypass Wicks verification. This feature allows Wick to regenerate the captcha intervally before manual solvers can answer!
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=right>
+<div class="ui inverted segment" style="text-align: left !important;">
+<div class="ui inverted list">
+<div class=item style="position:relative;
+                              border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: orange;background-color: rgba(255, 200, 5, 0.03);">
+<img class="ui avatar image" style="position:absolute;
+                                          top:2px;
+                                          left:0;" src="wick9ab4.png?size=64" alt=Wick>
+<div class=content style=margin-left:30px;>
+<div class=header><span class="ui red text" style="font-size: 16px;">Wick</span> <span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span></div>
+<div class=description>
+<span class="ui blue text">@ADuckOnQuack</span>
+<div class="ui inverted segment" style="border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: rgb(246, 56, 249);">
+<div class="ui header">
+<img class="ui avatar tiny image" src="../cdn.discordapp.com/emojis/6607900948771635323860.png?v=1" alt="Verification Captcha">
+<i><span style="font-weight: normal">Hello! Are you human? Let's find out!</span></i>
+</div>
+<div class="ui description" style=margin-top:5px;>
+<span class="ui black label" style="font-weight: normal;">Please type the captcha below to be able to access this server:</span> <br>
+<img style="max-width: 100%" src=../media.discordapp.net/attachments/537230332278079488/760904059279638588/wickCaptcha.png>
+<br>
+<span style="font-size: 10px;">Verification Period: 2 minutes</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=item style="position:relative;
+                              border-style: solid;border-color: rgba(255, 0, 0, 0);background-color: rgba(255, 00, 0, 0);">
+<img class="ui avatar image" style="position:absolute;
+                                          top:2px;
+                                          left:0;" src="https://cdn.discordapp.com/avatars/604561497376555008/adf2da97f512953ce48c46acee596289.webp?size=128" alt=ADuckOnQuack#1234>
+<div class=content style=margin-left:30px;>
+<div class=header><span class="ui orange text" style="font-size: 16px;">
+ADuckOnQuack
+</span> <span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span></div>
+<div class=description>qvdkgb
+</div>
+</div>
+</div>
+<div class=item style="position:relative;
+                              border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: orange;background-color: rgba(255, 200, 5, 0.03);">
+<img class="ui avatar image" style="position:absolute;
+                                          top:2px;
+                                          left:0;" src="wick9ab4.png?size=64" alt=Wick>
+<div class=content style=margin-left:30px;>
+<div class=header><span class="ui red text" style="font-size: 16px;">Wick</span> <span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span></div>
+<div class=description>
+<span class="ui blue text">@ADuckOnQuack</span>, You have been verified!
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=featuresfbox>
+<div class=left>
+<h3 class="ui header">
+<img class="ui medium image lazy" data-src="../cdn.discordapp.com/emojis/6607896820611809383860.png?v=1">
+<div class=content style="color: white !important">
+Join Gate
+<span class="ui mini compact green button" style="pointer-events: none;">FREE</span>
+</div>
+</h3>
+<div style="text-align: left;">
+Setup some powerful walls for members join your server, filter anything you don&#39;t want and keep your server safe from threats!
+<br>
+<div class="ui inverted relaxed list">
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6611816182786293863860.png?v=1">
+New Accounts
+</div>
+<div class=description>
+You can make Wick deal with new accounts if you want. You get to decide how old an account should be in order to access your server and what Wick should do to those who dont meet this requirement.
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6611816182702408083860.png?v=1">
+Accounts without Avatars
+</div>
+<div class=description>
+You can filter out accounts that have no profile pictures set since they are mostly malicious.
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6608293234351800323860.png?v=1">
+Bot Additions
+<span class="mini compact ui orange button">PREMIUM</span>
+</div>
+<div class=description>
+You can only allow few people to be able to add bots, any bot added by someone unauthorized will be dealt with automatically to ensure safety!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6622900491232215143860.png?v=1">
+Unverified Bot Additions
+<span class="mini compact ui orange button">PREMIUM</span>
+</div>
+<div class=description>
+You can always block bots that are unverified by Discord since they can be malicious.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=right>
+<div class="ui inverted segment" style="text-align: left !important;">
+<div class="ui inverted list">
+<div class=item style="position:relative;
+                                  border-style: solid;border-color: rgba(255, 0, 0, 0);background-color: rgba(255, 00, 0, 0);">
+<img class="ui avatar image" style="position:absolute;
+                                              top:2px;
+                                              left:0;" src=wick.png alt=Wick>
+<div class=content style=margin-left:30px;>
+<div class=header>
+<span class="ui orange text" style="font-size: 16px;">Wick</span>
+<span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span>
+</div>
+<div class=description>
+<div class="ui inverted segment" style="border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: orange;">
+<div style="top:10px;right:5px;float: right;position: absolute;max-width: 5vw;max-height: 5vw;">
+<img style="border-radius: 5%; max-width: 100%" src="https://cdn.discordapp.com/avatars/568812682463936562/e001c643376e3bacada146cda9b3c85c.webp?size=128" alt="rm rf#0145">
+</div>
+<div class="ui header" style="padding-right: 50px;">
+<span style="font-weight: normal">
+rm rf has been kicked!
+</span>
+</div>
+<div class="ui description" style="margin-top:5px;padding-right: 60px;">
+<div class="ui list">
+<div class=item>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6611816182702408083860.png?v=1" alt="rm rf#0145">
+<span><strong>Member:</strong>
+rm rf#0145
+<strong>[568812682463936562 ]</strong>
+</span>
+</div>
+<div class=item>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6608366858435297593860.png?v=1">
+<span><strong>Reason:</strong> Account is too young. <br><i>[Only accounts older than 7 days are allowed]</i></span>
+</div>
+<div class=item>
+<div class=header>
+More Details:
+</div>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607898729651896413860.png?v=1">
+<span><strong>Member Direct Messaged?</strong> <img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1"></span>
+</div>
+<div class=item>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6608161635923394673860.png?v=1">
+<span><strong>Member Punished?</strong> <img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=featuresfbox>
+<div class=left>
+<h3 class="ui header">
+<img class="ui medium image lazy" data-src="../cdn.discordapp.com/emojis/6607900948394148043860.png?v=1">
+<div class=content style="color: white !important">
+Panic Modes
+<a class="ui mini compact orange button" href=premium.html>PREMIUM</a>
+</div>
+</h3>
+<div style="text-align: left;">
+Wick comes with two Panic Mode enhanced to handle rapid attacks from nuke scripts to raiding selfbots!
+<br>
+<div class="ui inverted relaxed list">
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6608293234349178883860.png?v=1">
+Anti Nuke Panic Mode
+</div>
+<div class=description>
+Wick will lockdown the server as soon as something bad starts happening. Wick will try to eliminate any threat and restore everything back to how it was!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6608161636218306663860.png?v=1">
+Heat Panic Mode
+</div>
+<div class=description>
+If a raid starts happening, Wick will start instantly dealing with raiding accounts without touching your regular members!
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=right>
+<div class="ui inverted segment" style="text-align: left !important;">
+<div class="ui orange right corner label" style=overflow:hidden;>
+<i class="icon gem"></i>
+</div>
+<div class="ui inverted list">
+<div class=item style="position:relative;
+                                            border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: orange;background-color: rgba(255, 200, 5, 0.03);">
+<img class="ui avatar image" style="position:absolute;
+                                                        top:2px;
+                                                        left:0;" src="wick9ab4.png?size=64">
+<div class=content style=margin-left:30px;>
+<div class=header><span class="ui red text" style="font-size: 16px;">Wick</span> <span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span></div>
+<div class=description>
+<span class="ui purple text">@Admins</span>
+<div class="ui inverted segment" style="border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: red;">
+<div class="ui header">
+<img class="ui avatar tiny image" style="height: 20px;width:20px;" src="../cdn.discordapp.com/emojis/6611816176788439043860.png?v=1">
+<span style="font-weight: normal">
+Panic Mode Triggered! [Anti Nuke]
+</span>
+</div>
+<div class="ui description" style=margin-top:5px;>
+<span class="ui black label" style="font-weight: normal;">An abnormal behaviour has been detected!<br>
+Wick will lockdown the server and run a scan.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=item style="position:relative;
+                                            border-style: solid;border-color: rgba(255, 0, 0, 0);background-color: rgba(255, 00, 0, 0);">
+<div class=content style=margin-left:30px;>
+<div class=description>
+<div class="ui inverted segment" style="border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: green;margin-left: 6px;">
+<div class="ui header">
+<span style="font-weight: normal">
+Panic Mode Report:
+</span>
+</div>
+<div class="ui description" style=margin-top:5px;>
+<div class="ui list">
+<div class=item>
+<div class=description>
+<div style="margin-top: -5px;">
+<img class="ui avatar tiny image" style="height: 20px;width:20px;" src="../cdn.discordapp.com/emojis/6608293256413839673860.png?v=1">
+Case: <span class="ui black label">8KuPsd</span>
+</div>
+<div style="margin-top: -5px;">
+<img class="ui avatar tiny image" style="height: 20px;width:20px;" src="../cdn.discordapp.com/emojis/6608293253139661123860.png?v=1">
+Quarantined: 1 <img class="ui avatar tiny image" style="height: 20px;width:20px;" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+| 0 <img class="ui avatar tiny image" style="height: 20px;width:20px;" src="../cdn.discordapp.com/emojis/6607895919006843293860.png?v=1">
+</div>
+<div style="margin-top: -5px;">
+<span class="ui black label"><img class="ui avatar tiny image" style="height: 20px;width:20px;" src="../cdn.discordapp.com/emojis/6608366859820728373860.png?v=1">
+Mabelyn#6256 [12 fragments]
+</span>
+</div>
+</div>
+</div>
+</div>
+<h4 class="ui header">
+Server Restore Report:
+</h4>
+<span class="ui black label"><img class="ui avatar tiny image" style="height: 20px;width:20px;" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">Latest Snippet of your server has been loaded successfully!</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=featuresfbox>
+<div class=left>
+<h3 class="ui header">
+<img class="ui medium image lazy" data-src="../cdn.discordapp.com/emojis/6607896823045816923860.png?v=1">
+<div class=content style="color: white !important">
+Join Raid
+<a class="ui mini compact orange button" href=premium.html>PREMIUM</a>
+</div>
+</h3>
+<div style="text-align: left;">
+Wick will monitor ALL members joining your server. And it will also track all the invites in your server and which are being used. If an abnormal join behaviour is displayed, Wick will instantly punish everyone involved and will try to delete the invite links acting as a gateway to these raiders.
+<br>
+<div class="ui inverted relaxed list">
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6608161635418767463860.png?v=1">
+Target
+</div>
+<div class=description>
+You can make Wick monitor all joins or just those related to accounts Wick finds suspicious!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6608293256413839673860.png?v=1">
+Invites Monitoring
+</div>
+<div class=description>
+Wick keeps track of each and every invite used by members joining your server. If Wick is suspecting a raid, it will eliminate the invite link acting as a gateway to these raid accounts!
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=right>
+<div class="ui inverted segment" style="text-align: left !important;">
+<div class="ui orange right corner label" style=overflow:hidden;>
+<i class="icon gem"></i>
+</div>
+<div class="ui inverted list">
+<div class=item style="position:relative;
+                                                    border-style: solid;border-color: rgba(255, 0, 0, 0);background-color: rgba(255, 00, 0, 0);">
+<img class="ui avatar image" style="position:absolute;
+                                                                top:2px;
+                                                                left:0;" src=wick.png>
+<div class=content style=margin-left:30px;>
+<div class=header>
+<span class="ui orange text" style="font-size: 16px;">Wick</span>
+<span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span>
+</div>
+<div class=description>
+<div class="ui inverted segment" style="margin-bottom: -5px;">
+<h5 class="ui header">
+<i class="icon file outline"></i>
+<div class=content>
+<span class="ui blue text">joinRaidRecord.txt</span>
+<div class="sub header" style="font-size: 10px;">882 bytes</div>
+</div>
+</h5>
+</div>
+<div class="ui inverted segment" style="border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: orange;">
+<div class="ui header" style="padding-right: 50px;">
+<span style="font-weight: normal">Join Raid System Triggered!</span>
+</div>
+<div class="ui description" style="margin-top:5px;padding-right: 60px;">
+<div class="ui list">
+<div class=item>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+<span>
+RAIDER#0001
+</span><br>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+<span>
+RAIDER#0002
+</span><br>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+<span>
+RAIDER#0003
+</span><br>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+<span>
+RAIDER#0004
+</span><br>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+<span>
+RAIDER#0005
+</span><br>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+<span>
+RAIDER#0006
+</span><br>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+<span>
+RAIDER#0007
+</span><br>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+<span>
+RAIDER#0008
+</span><br>
+</div>
+<div class=item>
+<div class=header>
+Invites Responsible:
+</div>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6608366859820728373860.png?v=1">
+<span><strong>discord.gg/8C972nY</strong>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1">
+Deleted!</span><br>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6608366859820728373860.png?v=1">
+<span><strong>Maker:</strong>
+Mobilfan#1234
+</span>
+</div>
+<div class=item>
+<div class=header>
+Details:
+</div>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6608366859820728373860.png?v=1">
+<span><strong>Action:</strong>
+Kick</span><br>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6608366859820728373860.png?v=1">
+<span><strong>Time:</strong>
+October 2nd 2020, 10:29:30 am</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=featuresfbox>
+<div class=left>
+<h3 class="ui header">
+<img class="ui medium image lazy" data-src="../cdn.discordapp.com/emojis/6608293253139661123860.png?v=1">
+<div class=content style="color: white !important">
+Quarantine
+<span class="ui mini compact green button" style="pointer-events: none;">FREE</span>
+</div>
+</h3>
+<div style="text-align: left;">
+Wick comes with a neat system called the Quarantine. Anyone in Quarantine is not able to do absolutely ANYTHING in your server, they can&#39;t even see your server channels. This is made specifically for your rogue mods/admins.
+<br>
+<div class="ui inverted relaxed list">
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6611898489373982723860.png?v=1">
+Quarantine Hold
+</div>
+<div class=description>
+No one can help save someone out of the Quarantine except you and your trusted admins. Anyone unauthorized trying to help a Quarantined member out will end up joining the Quarantine.
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="../cdn.discordapp.com/emojis/6611816176788439043860.png?v=1">
+Strict Mode
+<span class="mini compact ui orange button">PREMIUM</span>
+</div>
+<div class=description>
+You can make Wick punish your admins if they try to add a dangerous permission to ANY role in your server. If you finished setting up your server, enabling this is very awesome because no one will be able to mess around anymore!
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=right>
+<div class="ui inverted segment" style="text-align: left !important;">
+<div class="ui inverted list">
+<div class=item style="position:relative;
+                                                border-style: solid;border-color: rgba(255, 0, 0, 0);background-color: rgba(255, 00, 0, 0);">
+<img class="ui avatar image" style="position:absolute;
+                                                            top:2px;
+                                                            left:0;" src=wick.png>
+<div class=content style=margin-left:30px;>
+<div class=header>
+<span class="ui orange text" style="font-size: 16px;">Wick</span>
+<span style="font-weight: normal;font-size: 10px;color: grey !important">Today at 12:51 AM</span>
+</div>
+<div class=description>
+<div class="ui inverted segment" style="border-style: solid;border-color: rgba(255, 0, 0, 0);border-left-color: orange;">
+<div style="top:10px;right:5px;float: right;position: absolute;max-width: 5vw;max-height: 5vw;">
+<img style="border-radius: 5%; max-width: 100%" src="https://cdn.discordapp.com/avatars/568812682463936562/e001c643376e3bacada146cda9b3c85c.webp?size=128">
+</div>
+<div class="ui header" style="padding-right: 60px;">
+<span style="font-weight: normal">
+rm rf#0145 has been quarantined!
+</span>
+</div>
+<div class="ui description" style="margin-top:5px;padding-right: 60px;">
+<div class="ui list">
+<div class=item>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6611816182702408083860.png?v=1">
+<span>
+<strong>Member:</strong>
+rm rf#0145
+<strong>[568812682463936562]</strong>
+</span>
+</div>
+<div class=item>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6608366858435297593860.png?v=1">
+<span>
+<strong>Reason:</strong> Member added dangerous permissions to a role.</span>
+</div>
+<div class=item>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6608366858435297593860.png?v=1">
+<span>
+<strong>Logs:</strong>
+Added dangerous permissions to Mobilfan [514873754178945044]
+</span>
+</div>
+<div class=item>
+<div class=header>
+More Details:
+</div>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607898729651896413860.png?v=1">
+<span><strong>Member Direct Messaged?</strong> <img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1"></span>
+</div>
+<div class=item>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6608161635923394673860.png?v=1">
+<span><strong>Member Punished?</strong>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1"></span>
+</div>
+<div class=item>
+<img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6622900491232215143860.png?v=1">
+<span><strong>Public Role Cleansed?</strong> <img class="ui middle aligned image" style="width: 16px; height: 16px" src="../cdn.discordapp.com/emojis/6607899366513704973860.png?v=1"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class=majorTitle>.... and a lot more!!</h2>
+<div class="ui left aligned inverted segment" style="min-width: 50%;max-width: 80%;justify-content: center;justify-items: center;margin: 0 auto;">
+<div class="ui inverted relaxed list">
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="https://cdn.discordapp.com/emojis/660836685982072837.png?v=1" alt="Powerful Moderation Commands">
+Powerful Moderation Commands
+</div>
+<div class=description>
+You can do any moderation action possible using Wick. You can also target multiple members at once. All moderation commands are super advanced yet easy to use!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="https://cdn.discordapp.com/emojis/660836685982072837.png?v=1" alt="Super Customizable Whitelist">
+Super Customizable Whitelist
+</div>
+<div class=description>
+Wick comes with 5 whitelist types that allow you to build the perfect automod and security system. You can whitelist any element (member, channel, role, category, webhook and even an invite) aswell.
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="https://cdn.discordapp.com/emojis/660836685982072837.png?v=1" alt="Super Customizable Behaviour">
+Super Customizable Behaviour
+</div>
+<div class=description>
+You can set your own prefix, you can tell Wick to make its message compact, you can tell Wick to delete its warning, you can pretty much make Wick behave the way you want!
+</div>
+</div>
+</div>
+<div class=item style="font-weight: normal;">
+<div class="middle aligned content">
+<div class=header>
+<img class="ui avatar image lazy" style=width:20px;height:20px; data-src="https://cdn.discordapp.com/emojis/660836685982072837.png?v=1" alt="Detailed Logging">
+Detailed Logging
+</div>
+<div class=description>
+Wick will give you most details possible related to every single action it does!
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 class=majorTitle>Should you trust Wick?
+</h1>
+<h2 class=wickMainDesc>
+Thousands of Discord servers trust Wick, this is a very small chunk of servers thatlove Wick!
+</h2>
+<div class=featuresContainer id=wickserversshowcase>
+<div style="height: 150px;color: white !important;">
+<div style="height: 100%;padding-top: 30px;">
+<div style="margin: 0 auto;text-align: center;">
+<div class="ui active centered inline fast huge loader"></div>
+Loading Trusted Servers;
+</div>
+</div>
+</div>
+</div>
+<h1 class=majorTitle>Wick on popular botlists
+</h1>
+<div style="width: 70%; margin: 0 auto;" id=botlistsContainer>
+<div style="height: 150px;color: white !important;">
+<div style="height: 100%;padding-top: 30px;">
+<div style="margin: 0 auto;text-align: center;">
+<div class="ui active centered inline fast huge loader"></div>
+Loading FAQ Elements;
+</div>
+</div>
+</div>
+</div>
+<h1 class=majorTitle>General FAQ</h1>
+<div style="width: 70%; margin: 0 auto;" id=faqContainer>
+<div style="height: 150px;color: white !important;">
+<div style="height: 100%;padding-top: 30px;">
+<div style="margin: 0 auto;text-align: center;">
+<div class="ui active centered inline fast huge loader"></div>
+Loading FAQ elements;
+</div>
+</div>
+</div>
+</div>
+<script src="../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="df09aa88f9ecb5d607d67e58-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'629d65643b38363c',m:'a92bf7d9b37de8def794d66325f9afc7ef707503-1614717164-1800-AQObev/CFhvo/2wx8zYvYRnkgGJwzT0mpYC0E4g6/fwLcZd0WpK8JIi0oCJKN2r8JfJTcd61u79bXpPW0tSW2hWIArOuTtod0i7Ukk07xmx1uB20nrO1u7ba+5zfFnWnng==',s:[0x6b524fc28f,0x794c6870bc],}})();</script><script defer src="../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"629d65643b38363c","r":1,"version":"2021.2.0","si":10}'></script>
+</body>
+<footer>
+<style>
+</style>
+<footer style=margin-top:100px;>
+<div class="ui placeholder segment" style="color: #f7f7f7 !important;
+background: #3C3B3F;
+background: -webkit-linear-gradient(to right, rgb(17, 17, 17), rgb(17, 17, 17));
+background: linear-gradient(to right, rgb(17, 17, 17), rgb(17, 17, 17));">
+<div class="ui three column very relaxed stackable grid" style="margin: 15px;padding:10px;">
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<h1>Wick Bot</h1>
+<p><i class="icon copyright outline"></i> Copyright Wick Bot 2019-2021. All rights reserved.
+<br> Wick is not affiliated with Discord.
+</p>
+<div>
+<a class="ui vertical animated small button" href="https://discordapp.com/oauth2/authorize?client_id=536991182035746816&amp;scope=bot&amp;permissions=8" style="display:inline-block;margin: 5px;">
+<div class="visible content">
+<i class="icon hand pointer"></i>
+Invite
+</div>
+<div class="hidden content">
+<i class="icon hand pointer"></i>
+</div>
+</a>
+<a class="ui vertical animated small button" href=https://discord.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fwickbot.com%2Fwauth%2Fcallback&amp;scope=identify%20guilds&amp;code_challenge=zjhlBDPEQ4nw9B9xbR485vqpV4yu99FMJtFYQqOYa28&amp;code_challenge_method=S256&amp;state=1MzIzqWGgDBQISseICsVLk4s&amp;client_id=536991182035746816 style="display:inline-block;margin: 5px;">
+<div class="visible content">
+<i class="icon comment alternate"></i>
+Review
+</div>
+<div class="hidden content">
+<i class="icon comment alternate"></i>
+</div>
+</a>
+<a class="ui vertical animated small button" href=https://discord.gg/8C972nY style="display:inline-block;margin: 5px;">
+<div class="visible content">
+<i class="icon envelope outline"></i>
+Contact
+</div>
+<div class="hidden content">
+<i class="icon envelope outline"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="middle aligned column" style="text-align: left;justify-content: left; justify-items: left;margin: 0 auto;">
+<h1>Useful Links</h1>
+<div class="ui inverted relaxed animated list">
+<a class=item href="https://discordapp.com/oauth2/authorize?client_id=536991182035746816&amp;scope=bot&amp;permissions=8" style="font-weight: normal;">
+<i class="icon plus square outline"></i>
+<div class="middle aligned content">
+<div class=header>
+Add Wick
+</div>
+<div class=description>
+Add Standard Wick to your server
+</div>
+</div>
+</a>
+<a class=item href=https://docs.wickbot.com/ style="font-weight: normal;">
+<i class="icon file outline"></i>
+<div class="middle aligned content">
+<div class=header>
+Documentation
+</div>
+<div class=description>
+Learn how to use Wick Bot efficiently
+</div>
+</div>
+</a>
+<a class=item href=https://discord.gg/8C972nY style="font-weight: normal;">
+<i class="icon question circle outline"></i>
+<div class="middle aligned content">
+<div class=header>
+Join Support Server
+</div>
+<div class=description>
+Join Wick&#39;s lounge and enjoy your time there.
+</div>
+</div>
+</a>
+<a class=item href=premium.html style="font-weight: normal;">
+<i class="icon gem outline"></i>
+<div class="middle aligned content">
+<div class=header>
+Premium
+</div>
+<div class=description>
+Rock Wick Premium in your server and get the best security possible
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="middle aligned column" style="text-align: left;justify-content: left; justify-items: left;margin: 0 auto;">
+<h1>Terms & Policies</h1>
+<div class="ui inverted relaxed animated list">
+<a class=item href=tos.html style="font-weight: normal;">
+<i class="icon ruler"></i>
+<div class="middle aligned content">
+<div class=header>
+Terms Of Service
+</div>
+<div class=description>
+Read what you need to respect when using Wick Bot.
+</div>
+</div>
+</a>
+<a class=item href=privacy.html style="font-weight: normal;">
+<i class="icon file user secret"></i>
+<div class="middle aligned content">
+<div class=header>
+Privacy Policy
+</div>
+<div class=description>
+What do we do with your information.
+</div>
+</div>
+</a>
+<a class=item href=refund.html style="font-weight: normal;">
+<i class="icon money check"></i>
+<div class="middle aligned content">
+<div class=header>
+Refund Policy
+</div>
+<div class=description>
+Check out our stance when it comes to refunding our premium services.
+</div>
+</div>
+</a>
+<a class=item href=cookies.html style="font-weight: normal;">
+<i class="icon cookie"></i>
+<div class="middle aligned content">
+<div class=header>
+Cookies Policy
+</div>
+<div class=description>
+Learn what does Wick do with cookies.
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script type="df09aa88f9ecb5d607d67e58-text/javascript">const el=document.querySelectorAll("img"),observer=lozad(el);observer.observe()</script>
+</footer>
+
+<!-- Mirrored from wickbot.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Mar 2021 20:33:05 GMT -->
+</html>

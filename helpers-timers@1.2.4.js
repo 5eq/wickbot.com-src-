@@ -1,0 +1,17 @@
+function wickDeskMobileRes(x){if(x.matches){$(".full-screen").css("display","none").css("visibility","hidden");$(".small-screen").css("visibility","visible").css("display","flex");}else{$(".small-screen").css("display","none").css("visibility","hidden");$(".full-screen").css("visibility","visible").css("display","flex");}}
+const x=window.matchMedia("screen and (max-width: 950px)");wickDeskMobileRes(x);x.addListener(wickDeskMobileRes);$("#crapfnaki").dropdown();$("#mobileHeaderMenu").dropdown({displayType:'block'});$("#deskHeaderMenu").dropdown({displayType:'block'});$("#moreDrop").dropdown();$("#upvoteWick").click(function(){$("#upvote-modal").modal('show');});function unloadJS(scriptName){var head=document.getElementsByTagName('head').item(0);var js=document.getElementById(scriptName);js.parentNode.removeChild(js);}
+function unloadAllJS(){var jsArray=new Array();jsArray=document.getElementsByTagName('script');for(i=0;i<jsArray.length;i++){if(jsArray[i].id){unloadJS(jsArray[i].id)}else{jsArray[i].parentNode.removeChild(jsArray[i]);}}}
+window.onload=function(){$("#logout-btn").click(function(){$("#logout-modal").modal('show');})
+$("#logout-confirm").click(function(){document.location="/wauth/logout";})}
+const toastedWick=function(type,msg,title,dur,img,i,pos='top right',tapClose=true,extras={}){if(!dur)dur=10000;if(['success','error'].includes(type)){if(!i)i=type=='error'?'times':'check';if(!title)title=type=='error'?'Error!':'Success!'}
+if(!pos)pos="top right";if(tapClose==null)tapClose=true;$('body').toast({position:pos,displayTime:dur,closeOnClick:tapClose,showProgress:'top',...(img?{showImage:img,classImage:'avatar',}:{}),...(i?{showIcon:i,}:{}),...(title?{title:title,}:{}),class:type,message:msg,transition:{showMethod:'zoom',showDuration:1000,hideMethod:'fade',hideDuration:1000},...extras,});}
+function trim_text(el){el.value=el.value.replace(/(^\s*)|(\s*$)/gi,"").replace(/[ ]{2,}/gi," ").replace(/\n +/,"\n");return;}
+$(function(){$("textarea").change(function(){trim_text(this);});$("input").change(function(){trim_text(this);});});async function confirmRequest(url,token,postData){try{const fetched=(await fetch(url,{method:"POST",headers:{"Content-Type":"application/json",'X-CSRF-TOKEN':token,'CSRF-Token':token},body:JSON.stringify({data:postData,})}))
+const fetchedJSON=await fetched.json();return fetchedJSON;}catch(e){return{err:'Request rejected for an unknown reason. Refresh this page.'}}}
+const intelHistory=[];let intelHistoryLock=false;async function getIntel(code,token,ID){if(intelHistoryLock)return false;$("#getIntelModalTitle").text("Loading");$("#getIntelModalContent").text("Fetching information...");$("#getIntelModalDiv").modal({blurring:true}).modal('show');const data=(intelHistory.find(iH=>iH.code==code)||{}).data||(await Promise.race([confirmRequest('/getintel',token,{code}),(new Promise((resolve,reject)=>setTimeout(reject,10000))).catch(e=>({err:"No answer was recieved [TIMEOUT]!"})),]))
+if(!data||data.err){$("#getIntelModalTitle").text("An error happened!")
+$("#getIntelModalContent").text(data.err?data.err:"Failed to retrieve any information. Refresh the page!")
+intelHistoryLock=false;return false;}
+intelHistory.push({code,data})
+$("#getIntelModalTitle").text(data.title)
+$("#getIntelModalContent").text('').append(data.desc);intelHistoryLock=false;return true;};

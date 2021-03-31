@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang=en>
+
+<!-- Mirrored from wickbot.com/premium by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Mar 2021 20:33:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<title>
+Wick - Premium</title>
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<meta content="Wick Bot" name=subject>
+<meta content="Wick Bot, the best Discord security bot available for free. It is an anti nuke, anti raid, anti spam and a verification bot that comes with advanced moderation. Wick also has very useful utility commands." name=description>
+<meta content="wick, bot, wickbot, discord, discordbot, antinuke, anti nuke, anti-nuke, antiraid, anti raid, anti, raid, nuke, antispam, anti-spam, spam, security, anti wizz, wiz, nuked, raided, spammed, verification, verify, captcha, antiselfbots, anti-selfbots, selfbot, selfbots, discord raids, raids, nuking, raiding, spamming" name=keywords>
+<meta content="index, follow" name=robots>
+<meta content=#1f88ff name=theme-color>
+<meta content=https://wickbot.com property=og:url>
+<meta content=https://wickbot.com/wick.png property=og:image>
+<meta content=64 property=og:image:width>
+<meta content=64 property=og:image:height>
+<link href=wick.png rel=apple-touch-icon>
+<script src=../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js type="a3d100d4f85c014407d67caf-text/javascript"></script>
+<link href=../cdn.jsdelivr.net/npm/fomantic-ui%40nightly/dist/semantic.min.css rel=stylesheet type=text/css>
+<script src=../cdn.jsdelivr.net/npm/fomantic-ui%40nightly/dist/semantic.min.js type="a3d100d4f85c014407d67caf-text/javascript"></script>
+<script src=../cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js type="a3d100d4f85c014407d67caf-text/javascript"></script>
+<script src=../cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js type="a3d100d4f85c014407d67caf-text/javascript"></script>
+<script src=header%400.0.4.js type="a3d100d4f85c014407d67caf-text/javascript"></script>
+<script src=helpers-timers%401.2.4.js type="a3d100d4f85c014407d67caf-text/javascript"></script>
+<script src=../cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js type="a3d100d4f85c014407d67caf-text/javascript"></script>
+<link href=generalHeader%400.1.6.css rel=stylesheet type=text/css>
+<link href=https://fonts.gstatic.com/ rel=preconnect crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel=stylesheet>
+<div class="full-screen ui inverted secondary menu" style="visibility: hidden;display:none;">
+<div class="header item">
+<img style="border-radius: 100%" src=wick.png alt="Wick Logo" height=40px width=40px>
+</div>
+<a href=index.html class=item>
+<i class="icon home"></i> Home
+</a>
+<div class=item>
+<a href=index.html class="ui inverted secondary disabled button">
+<i class="icon edit outline"></i> Dashboard
+</a>
+<div class="ui orange mini label" style="position: absolute;bottom:-2px;right: 3px;">LOGIN
+</div>
+</div>
+<a href=status.html class=item>
+<i class="icon wifi"></i> Status
+</a>
+<a href=https://discord.gg/8C972nY class=item>
+<i class="icon headphones"></i> Support
+</a>
+<div class="ui dropdown item" id=moreDrop>
+<i class="icon plus square"></i> More
+<i class="dropdown icon"></i>
+<div class=menu>
+<a href=https://docs.wickbot.com/ class=item>Documentation</a>
+<a href=team.html class=item>Team</a>
+<div class=item style="background: #3a6186;
+            background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+            background: linear-gradient(to right, #89253e, #3a6186);" id=upvoteWick>Upvote Wick</div>
+<a href=https://bots.ondiscord.xyz/bots/536991182035746816/review class=item rel="noopener noreferrer" target=_blank>Review Wick</a>
+</div>
+</div>
+<div class="right menu">
+<div class=item>
+<a href=premium.html class="ui orange animated button">
+<div class="visible content"><i class="icon gem"></i> Premium</div>
+<div class="hidden content">
+<i class="icon gem"></i>
+</div>
+</a>
+</div>
+<div class=item>
+<a href=https://discord.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fwickbot.com%2Fwauth%2Fcallback&amp;scope=identify%20guilds&amp;code_challenge=8eAbxcqDRxIE9_aJ54HQViJsP6mqKfV1EuP4U3Xjmcc&amp;code_challenge_method=S256&amp;state=Ni94gvhKfr61FH0OitCNCNsK&amp;client_id=536991182035746816 class="ui primary button">
+<i class="discord icon"></i> Login via Discord</a>
+</div>
+</div>
+</div>
+<div class="small-screen ui inverted secondary menu" style=display:flex;>
+<div class="header item" style="left: 15px;">
+<img style="border-radius: 100%" src=wick.png alt="Wick Logo" height=40px width=40px>
+</div>
+<div class="right menu">
+<div class="header item" style="right: 15px;">
+<div class="ui dropdown" style="color: rgb(59, 59, 59)" id=mobileHeaderMenu>
+<i class="bars white icon" style="color: white !important;"></i>
+<div class=menu style="right: 0;left: auto;">
+<a href=index.html class=item>
+<i class="icon home"></i> Home
+</a>
+<a href=status.html class=item>
+<i class="icon wifi"></i> Status
+</a>
+<a href=https://discord.gg/8C972nY class=item>
+<i class="icon headphones"></i> Support
+</a>
+<a href=premium.html class=item style="color: white !important; 
+                                        background: #f12711 !important;
+                                        background: -webkit-linear-gradient(to right, #f5af19, #f12711) !important;
+                                        background: linear-gradient(to right, #f5af19, #f12711) !important;">
+<i class="icon gem"></i> Premium
+</a>
+<a href=https://discord.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fwickbot.com%2Fwauth%2Fcallback&amp;scope=identify%20guilds&amp;code_challenge=d7h6g3OCPVV3yQWIZysJvBMEPgFaZw7XxH6vgdpEukM&amp;code_challenge_method=S256&amp;state=hYcADgw1Kj1nn7Z0r7FIPJBu&amp;client_id=536991182035746816 class=item>
+<i class="discord icon"></i> Login via Discord</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ui basic modal" id=upvote-modal>
+<div class="ui placeholder segment" style="color: #f7f7f7 !important;background: #3a6186;
+            background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+            background: linear-gradient(to right, #89253e, #3a6186);">
+<div class="ui four column very relaxed stackable grid">
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<p style="font-size: 25px;">
+TOP.GG
+</p>
+<a href=https://top.gg/bot/536991182035746816/vote class="ui big button">
+<i class="icon thumbs up"></i>Upvote
+</a>
+</div>
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<p style="font-size: 25px;">
+DBL
+</p>
+<a href=https://discordbotlist.com/bots/wick/upvote class="ui big button">
+<i class="icon thumbs up"></i>Upvote
+</a>
+</div>
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<p style="font-size: 25px;">
+BOTLIST.SPACE
+</p>
+<a href=https://botlist.space/bot/536991182035746816/ class="ui big button">
+<i class="icon thumbs up"></i>Upvote
+</a>
+</div>
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<p style="font-size: 25px;">
+BFD
+</p>
+<a href=https://botsfordiscord.com/bot/536991182035746816/vote class="ui big button">
+<i class="icon thumbs up"></i>Upvote
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="ui small longer modal" id=getIntelModalDiv>
+<i class="close icon"></i>
+<div class=header id=getIntelModalTitle>
+</div>
+<div class="scrolling content" id=getIntelModalContent>
+</div>
+<div class=actions>
+<div class="ui animated approve secondary button" tabindex=0>
+<div class="visible content">Understood</div>
+<div class="hidden content">
+<i class="icon check square"></i>
+</div>
+</div>
+</div>
+</div>
+<script async src='cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<!doctype html>
+<html lang=en>
+<head>
+<link href=premium.html rel=canonical>
+<meta content="Wick Premium" property=og:title>
+<meta content="Check out Wick's paid tiers and unlock more powerful features that help you keep your server safe." property=og:description>
+</head>
+<style>
+/*body {
+    background: #f12711;background: -webkit-linear-gradient(to right, #f5af19, #f12711);background: linear-gradient(to right, #f5af19, #f12711);
+}*/
+    h1 {
+        color: rgba(255, 255, 255, 0.877) !important;
+    }
+
+    h2 {
+        color: rgba(255, 255, 255, 0.808) !important;
+        text-align: center;
+        word-wrap: break-spaces;
+        font-size: 13px !important;
+    }
+
+    .premiumAvatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 40px;
+        margin: 15px;
+
+    }
+
+    .premiumAvatar .Info {
+
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px 10px;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        right: 50px;
+        text-transform: uppercase;
+
+    }
+
+    .premiumAvatar#pre {
+        border-radius: 50%;
+        padding: 5px;
+        border: 1px solid rgb(255, 186, 13);
+    }
+
+    .premiumAvatar#vip {
+        border-radius: 50%;
+        padding: 5px;
+        border: 1px solid rgb(230, 55, 99);
+    }
+
+    .plan-title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .feature {
+        border: none !important;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .feature .regular-price {
+        position: absolute;
+        top: 5px;
+        right: 49%;
+    }
+
+    .btn-plan {
+        padding: 20px !important;
+    }
+
+    .plan {
+        overflow: hidden;
+        -webkit-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        -o-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+        -o-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+    }
+
+    .plan:hover {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        z-index: 1;
+    }
+
+    @media screen and (min-width: 767px) {
+        .principal {
+            transform: scale(1.01);
+        }
+
+        .principal:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+    }
+
+    .plan-ribbon {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #21ba45;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 55px;
+        min-width: 200px;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        right: -45px;
+        -webkit-transform: rotate(40deg);
+        -moz-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+        -o-transform: rotate(40deg);
+        transform: rotate(45deg);
+        -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0 0.2);
+        -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0 0.2);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0 0.2);
+        z-index: 1;
+        line-height: 10px;
+    }
+
+    .plan-ribbon.red {
+        background-color: #DB2828;
+    }
+
+    .plan-ribbon.green {
+        background-color: #21BA45;
+    }
+
+    .plan-ribbon.yellow {
+        background-color: #FBBD08;
+    }
+
+    .plan-ribbon.darkGold {
+        background-color: rgb(53, 40, 1);
+        color: white;
+    }
+
+    .amount {
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .amount .wickPrice {
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .amount .wickPerM {
+        color: #4d4d4d;
+        font-size: 15px;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .regular-price {
+        text-decoration: line-through;
+        font-weight: 100;
+        font-size: 16px;
+        color: rgb(190, 190, 190);
+    }
+</style>
+<body>
+<div style="margin: 0 auto;margin-top:50px;
+            max-width: 70%;
+            min-width: 50%;"></div>
+<div class="ui container">
+<div class="ui three columns stackable grid">
+<div class=column>
+<div class="ui segments plan">
+<div class="ui top attached segment plan-title" style="font-size: 25px;height: 95px;background: #12c2e9;background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);">
+<span class="ui header" style="color: #f7f7f7 !important;">
+Free
+</span>
+</div>
+<div class="ui attached segment feature">
+<div class=amount>
+<i class="icon dollar sign" style="font-size: 40px;"></i>
+0
+</div>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6608293253139661123860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Anti Nuke
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fantinuke></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6608161638567116813860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Heat System
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fhe></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6611898489373982723860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Quarantine
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fquarantine></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6607900948771635323860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Verification
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fver></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6607896820611809383860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Join Gate
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fjg></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6608161635923394673860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Moderation
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fmod></i>
+</div>
+<a href="https://discord.com/oauth2/authorize?client_id=536991182035746816&amp;scope=bot&amp;permissions=8">
+<div class="ui bottom attached button btn-plan" style="color: #f7f7f7 !important;background: #12c2e9;background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);">
+<i class="icon plus"></i>
+Invite Wick
+</div>
+</a>
+</div>
+</div>
+<div class=column>
+<div class="ui segments plan">
+<div class="ui top attached segment plan-title" style="font-size: 25px;height: 95px;background: #f12711;background: -webkit-linear-gradient(to right, #f5af19, #f12711);background: linear-gradient(to right, #f5af19, #f12711);">
+<span class="plan-ribbon darkGold">
+POPULAR
+</span>
+<span class="ui header" style="color: #f7f7f7 !important;">
+Premium
+</span>
+</div>
+<div class="ui attached segment feature">
+<div class=amount>
+<span class=wickPrice>
+<i class="icon dollar sign" style="font-size: 40px;"></i>
+5
+</span>
+<span class=wickPerM> per month</span>
+</div>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6608293253139661123860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Advanced Anti Nuke
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fadvancedantinuke></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6607898726002851843860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Anti Nuke Panic Mode
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fanp></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6608161638567116813860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Heat System Panic Mode
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fhep></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6611816176788439043860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Advanced Quarantine
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-faquarantine></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6607900948771635323860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Customizable Verification
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fcusver></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6608293234351800323860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Advanced Join Gate
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fadvancedjg></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6607896823045816923860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Join Raid
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fjr></i>
+</div>
+<a href="https://discord.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fwickbot.com%2Fwauth%2Fcallback&amp;scope=identify%20guilds%20email&amp;code_challenge=M94gg8euSaG9OEkqZM8zDLOdu5FiHMFAWm4CI30vi0s&amp;code_challenge_method=S256&amp;state=hSTvrrnUfNgppMh2Fg6K72ol&amp;client_id=536991182035746816">
+<div class="ui bottom attached button btn-plan" style="color: #f7f7f7 !important;background: #f12711;background: -webkit-linear-gradient(to right, #f5af19, #f12711);background: linear-gradient(to right, #f5af19, #f12711);">
+<i class="icon gem"></i>Get Premium
+</div>
+</a>
+</div>
+</div>
+<div class=column>
+<div class="ui segments plan">
+<div class="ui top attached segment plan-title" style="font-size: 25px;height: 95px;background: #108dc7;background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);background: linear-gradient(to right, #ef8e38, #108dc7);">
+<span class="plan-ribbon red">
+SOLD OUT
+</span>
+<span class="ui header" style="color: #f7f7f7 !important;">
+VIP
+</span>
+</div>
+<div class="ui attached segment feature">
+<div class=amount>
+<span class=wickPrice>
+<i class="icon dollar sign" style="font-size: 40px;"></i>
+15
+</span>
+<span class=wickPerM> per month</span>
+</div>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6607899364458496103860.png?v=1" style=width:20px;height:20px;>
+<strong>
+All Premium Features
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fallp></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6607895921858969603860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Hosted Independently
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fhost></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6607899369238692343860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Powerful Resources
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fresources></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6607896816125214833860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Super Low Latency
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-flowp></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6622900488043233493860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Custom Branded
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fcustom></i>
+</div>
+<div class="ui attached segment feature" style="text-align: left">
+<img class="ui avatar image" src="../cdn.discordapp.com/emojis/6611816178675876053860.png?v=1" style=width:20px;height:20px;>
+<strong>
+Covers up to 12 servers!
+</strong>
+<i class="icon info circle" style="font-size: 15px !important;" id=getIntel-fmulservers></i>
+</div>
+<a href=#>
+<div class="ui bottom attached disabled button btn-plan" style="color: #f7f7f7 !important;background: #108dc7;background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);background: linear-gradient(to right, #ef8e38, #108dc7);">
+<i class="icon lock"></i>Unavailable
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<h1 style="margin-top: 50px;margin-bottom: 20px;" class=wickMainTitle>Premium FAQ</h1>
+<div style="width: 70%; margin: 0 auto;">
+<div class="ui inverted segment">
+<div class="ui inverted fluid accordion">
+<div class=title>
+<i class="dropdown icon"></i>
+How can I purchase one of the tiers?
+</div>
+<div class=content>
+<p class="transition hidden">
+You can choose any tier above and you will be redirected to Stripe to complete the purchase. We use Stripe as our payment processor so you can use Credit/Debit cards, ACH, Google pay, and Apple pay.
+</p>
+</div>
+<div class=title>
+<i class="dropdown icon"></i>
+When am I charged?
+</div>
+<div class=content>
+<p class="transition hidden">
+You are charged every month on the day you paid the last month.
+</p>
+</div>
+<div class=title>
+<i class="dropdown icon"></i>
+Can I cancel and get a refund?
+</div>
+<div class=content>
+<p class="transition hidden">
+You can cancel and make use of the remaining period of your subscription, but we do not give out refunds. Charge backs are met with a complete ban from all Wicks and related products. You are free to use the standard Wick version before purchasing premium.
+</p>
+</div>
+<div class=title>
+<i class="dropdown icon"></i>
+What&#39;s the uptime of Premium Wick?
+</div>
+<div class=content>
+<p class="transition hidden">
+Premium Wick has 99.98% uptime. The bot might go offline for few seconds due to an update. We use a provider that ensures a 99.99% SLA.
+</p>
+</div>
+<div class=title>
+<i class="dropdown icon"></i>
+Can I buy Wicks source code?
+</div>
+<div class=content>
+<p class="transition hidden">
+No.
+</p>
+</div>
+<div class=title>
+<i class="dropdown icon"></i>
+Is there a lifetime plan?
+</div>
+<div class=content>
+<p class="transition hidden">
+Not currently no.
+</p>
+</div>
+<div class=title>
+<i class="dropdown icon"></i>
+Who do I ask regarding subscriptions?
+</div>
+<div class=content>
+<p class="transition hidden">
+Daddy_Panda#0001 or fnAki#8646.
+</p>
+</div>
+</div>
+</div>
+</div>
+<h1 style="text-align: center; margin: 40px;">Some of our Supporters!</h1>
+<div style="text-align: center; margin: 40px;">
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/781002610127011851/a_aacf4b81ef0ca1a183a207a74f66f1a7.webp?size=128" data-content="Premium Member" data-position="top center" data-title=monty id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/589141857397768251/c1b78432f1b93b6315d4917341dcbae1.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Mr.Laukkanen id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/551507243284299790/fcce2df432780bd73dd1df85ced22422.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Drip id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/204056752071770112/c0ccaffc367fbe07636eafa0573f4a6b.webp?size=128" data-content="Premium Member" data-position="top center" data-title=PaintersDaughter id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/322574991612706816/5f4ce83a040b1bac59f0e7fda086d096.webp?size=128" data-content="Premium Member" data-position="top center" data-title=EcLipZx243446 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/110946543514697728/a_6489cbec70b55594996595d73ec74569.webp?size=128" data-content="VIP Member" data-position="top center" data-title=savior id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/740269114920140921/bd9f191a8149d6619da30849015244eb.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Fake 🐍" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/753661160041087017/46056728dbc8c260a48146040d837b1b.webp?size=128" data-content="Premium Member" data-position="top center" data-title="𝓛𝓪 𝓟𝓪𝓻𝓬𝓪" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/315540908567298050/3be589dfc24dd834f00452a3fb442f74.webp?size=128" data-content="Premium Member" data-position="top center" data-title=WithVision id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/811059679290458163/9d39c5bcf282f8a55a756a83508970a7.webp?size=128" data-content="Premium Member" data-position="top center" data-title=ModernModz id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/448918498924691456/428829e2e68613f7aeff8e88fad6f3d3.webp?size=128" data-content="VIP Member" data-position="top center" data-title=mur id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/778919991218405376/41f7df1d122ba4f8991a14e68a7e9293.webp?size=128" data-content="Premium Member" data-position="top center" data-title=bambi² id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/406609914807713793/a_33ea257888e7d8857d4251a395fd76e2.webp?size=128" data-content="Premium Member" data-position="top center" data-title="𝓑𝓻𝔂𝓼𝓸𝓷 𝓖." id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/706501793311490069/03cc92126ac62ad958a7cd4ff984748f.webp?size=128" data-content="Premium Member" data-position="top center" data-title=ibot id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/297852534326820865/a_c9e9f5b5d131ba0984fd06fe670253be.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Schlumped id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/565656061227565106/b923079284b36cce063cf7401c05cdc0.webp?size=128" data-content="Premium Member" data-position="top center" data-title=monkey id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/289914514340708352/a_77d140f396ed6f99f6384527efaa02b5.webp?size=128" data-content="Premium Member" data-position="top center" data-title=OMNI id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/787551503027535873/3e32c7f250fc1f08ea79cccfb6629ccf.webp?size=128" data-content="Premium Member" data-position="top center" data-title=jsisks id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/557709915712389121/9285bfc4b28e8f94bf30ee94c0bab464.webp?size=128" data-content="VIP Member" data-position="top center" data-title=AshEF id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/209837474044706817/27abe87c53b34c637bfd34ac7611dcd6.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Curtis id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/569673600819527680/581c1b1682ac6f9c564757a51d134b85.webp?size=128" data-content="Premium Member" data-position="top center" data-title=LucyWings id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/689212202351198222/a_ac8619420529b8726ae1d7b84963d0bc.webp?size=128" data-content="Premium Member" data-position="top center" data-title=!!*𝘾𝙤𝙙𝙚®💫 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/249986970476871680/730bf9e4a931cf452876b04c1fa149f3.webp?size=128" data-content="Premium Member" data-position="top center" data-title=noes id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/744351302724878480/a_9c09f536504ddc2235d195958650462a.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Crazy id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/234958502219612162/dd58ae9def5078fd243e753f67fff685.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Harry55494 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/459071166691147796/ca7bdded9d86ec92f3e59d1879594724.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Cur id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/208694245152784386/03aefc7b078cf8c698b1e45e17dd620a.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Malaki id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/698958173171613796/844ec8968f95bcc5400806b7918b9e15.webp?size=128" data-content="Premium Member" data-position="top center" data-title=IAMZAZU id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/279224954866630656/54b895128d2c7368d180e4d1810a77c6.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Dev id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/325873491431653376/07eb15ac925e10bc235c9567e65b1945.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Nova id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/205960030330028032/a_0b14652102f38631af6c8cd85083733e.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Sovoha id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/403557668767137802/601d73e164137e9d49b776a7175c566b.webp?size=128" data-content="VIP Member" data-position="top center" data-title="KING M" id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/596100858081574912/a91efffd81de16c7361b0d8db449afb9.webp?size=128" data-content="Premium Member" data-position="top center" data-title=padrepadre id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/757085390225014815/f89fd0dfd46fb9555e9e817e0d6bbc4b.webp?size=128" data-content="Premium Member" data-position="top center" data-title="old acc DONT DM WONT RESPOND" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/140101081521717248/68e0e45ba3c5aa4cb3c7465bbe96b6b3.webp?size=128" data-content="Premium Member" data-position="top center" data-title=fireshaper id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/114073855407947776/fbbfb3e5d2c8f6e2f9cba754a65f4cfe.webp?size=128" data-content="Premium Member" data-position="top center" data-title=DapperDuff id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/297799128799510529/11e79550701fbcfee722e4c35c9a8b48.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Aba id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/375074130153701377/a_48c0864682c156fe9d946a13b9b65d8d.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Azzy حلال" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/287599066630717450/888427a2d1e1ae972de341dfc7c9b737.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Stella id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/771750914616852490/747e088c138778cc8f2047705ab185ca.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Developerツ id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/170319581934649344/a_432eb83b6ab0ac37c10571ed15309c57.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Sneaky id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/188044117635235841/a_13798e9d0ef0200d0171ff4e72a29852.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Love id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/121014943989497859/7efa640cacb82d7865467785ae216312.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Inex id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/562640569298452480/a_39c415285a450dfb8759ea71f9aa04fc.webp?size=128" data-content="Premium Member" data-position="top center" data-title=abg💕 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/341575912828960770/b9aa181dced92eb0caf023b7df14c563.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Chris Gives Hugs" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/737492412615753842/d6be31ad1dd9e1241b9406330c736fbe.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Kibbi id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/563699905693220866/a_e854a4dd3973832a2c9e6f109170e5f4.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Xerduntis id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/714325901621329960/84000ef28320d64dcf6aaaa6c01d1da5.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Detective Queen" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/655756060384296961/be95407fa344134475dee8ef4fbd93f9.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Wren ™" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/410938828090638340/c96224e4e9e5676886819ca0a03ac50c.webp?size=128" data-content="Premium Member" data-position="top center" data-title=FIFER id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/445053396227981323/a_b328c0823fcb0029c844b662aea2c8fe.webp?size=128" data-content="Premium Member" data-position="top center" data-title=lk id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/437255943181565962/89aee681e9fbb9d11f91d9431ce14c53.webp?size=128" data-content="Premium Member" data-position="top center" data-title=PixelNinja id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/345523222114205697/a_dbf32463212d2dca1b0a2204f7851758.webp?size=128" data-content="Premium Member" data-position="top center" data-title=EBatuzay id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/501337258520084521/e0477bcc59000559d4db1ed4b4c58c9d.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Cloud Flake" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/738304441370804264/1a6f6e7cb30ee0e252d0271545acc6eb.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Queenie id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/723199054514749450/13009ca6bb382f1819c1342789bd857e.webp?size=128" data-content="Premium Member" data-position="top center" data-title="𝙵𝚘𝚞𝚗𝚍𝚎𝚛 𝚂𝚎𝚌𝚛𝚎𝚝 𝙽𝚎𝚝𝚠𝚘𝚛𝚔" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/562422465981054987/a6b22138d1510af577239e8bdd4ea49e.webp?size=128" data-content="Premium Member" data-position="top center" data-title="TG Senpai Nut" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/317421909434433567/38d28390c16ac42bcc798be2ee114dc8.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Kronos id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/336243658816749570/a_15011df0ee9f670e95cba28b7fb3f83a.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Simple id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/544701049085100042/f08a7d488d3ef03839e66239e4d872ea.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Cobalt id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/159754762890379274/1746875db08d230ade91831b1d3e2921.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Kaybee id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/630370893717176320/4bc764dda84f7e6cdde55a4c9679d8b2.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Ivy Average" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/802025104267149313/6493db49674fdfe4820aa2a9fbf16f60.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Cashout id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/682766139780104192/a_bca06b6d5599d332a25d3ee0fcf8d4b1.webp?size=128" data-content="Premium Member" data-position="top center" data-title=RoyalMarketBurglar id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/669564666581745665/c82ebdd22dcd0472640a9e6452d8e96d.webp?size=128" data-content="Premium Member" data-position="top center" data-title=TheLegend27 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/466557081793593346/cc8ea00c332083ead2de1eda48956367.webp?size=128" data-content="Premium Member" data-position="top center" data-title=dru id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/546866861736722462/0af6cfe181efac09c43cb8a577b7090c.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Johnnydonuts12 ᴮᴱᵀᴬ" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/220001330658279424/f9b1e125a2339e8684cdc89d98506e45.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Mango id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/578260986709147650/a_945e47f37375ab2deb26942cd4966de0.webp?size=128" data-content="Premium Member" data-position="top center" data-title="💚 ましろん" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/125388210426609664/a_3eae24a4de3a92c3864531ab2fd979b0.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Envy id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/231667889676091392/f7f25cb3f282d4e1914e80e634a91533.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Nicoo id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/587237889281097748/a_64ef725b0349634c6a797ee0fce9f98d.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Ivy id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/143459171155705856/a_4176172851a8c324cfdf2c2ad8f402e8.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Venom id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/200637376714768385/f79dca9aa8cc54916bf11d8ce497da2f.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Robin id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/270639493609029643/27a76adc747fb35da62fb157fea4a909.webp?size=128" data-content="Premium Member" data-position="top center" data-title=xlilx1l id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/297683107140599819/a_51f32d4ac3d37e0b77a9ecde11386b95.webp?size=128" data-content="VIP Member" data-position="top center" data-title=kitten id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/118546452879245314/b615cbdac5878b040c367149090d2150.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Tiggythetiger id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/476188720521805825/1bc876b49948c04df5c7dbee9f8e0685.webp?size=128" data-content="Premium Member | Bug Hunter" data-position="top center" data-title="X Daniel" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/235450058911383553/0b1e5c0889582ea68ffd9ba231155478.webp?size=128" data-content="VIP Member" data-position="top center" data-title=Pride id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/438888690652020737/a_d02918666cf45fd2a72688231e9e4309.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Dank id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/693406065546756186/2959be5a1c4fbffe1442abbc476e9666.webp?size=128" data-content="Premium Member" data-position="top center" data-title=ηιкσ id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/690264283052900398/a_22b8a47e243b5c665a08bd3b3d499773.webp?size=128" data-content="Premium Member" data-position="top center" data-title=SxmplxNxathxn id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/418958696308277260/a_a899cebc410f258f03b3924d6db2425d.webp?size=128" data-content="Premium Member" data-position="top center" data-title=MiniP0v3rty id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/489521525838446622/a_237e876954c27c8f773f8e436c9faae4.webp?size=128" data-content="Premium Member" data-position="top center" data-title=KingCobra70 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/478750546292113419/e6613f00a489da2278dcbf14c66d9eb6.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Tinder id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/374939755483234306/a_576e0d238f9d94b29686f297482f0694.webp?size=128" data-content="Premium Member" data-position="top center" data-title=4K$ id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/409060017124409344/8b6dab529d8f99dc8842fee90649ee53.webp?size=128" data-content="Premium Member" data-position="top center" data-title=~bandit~ id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/604561497376555008/a_10f796f3111d1036c02608c13cf2c6b9.webp?size=128" data-content="Support Member | VIP Member | Bug Hunter | Contributor" data-position="top center" data-title=ADuckOnQuack id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/207101146513276928/a_f3a910e078c605fb8e55e472c69bc6c0.webp?size=128" data-content="Premium Member" data-position="top center" data-title=ukiyo id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/409945694783143938/9282f077c6a8d999d184f43a16a89757.webp?size=128" data-content="Premium Member" data-position="top center" data-title=TxLoup id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/133231040952139776/49418de0d5a153bad471d948dcd12264.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Aluminum_Knight id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/366114481526276118/0901416f888f9bedbbb469e2cc644d8f.webp?size=128" data-content="Premium Member" data-position="top center" data-title=OT id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/563460414302584842/69f454d6bcb3f42a8b665f9fc20e14e0.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Nuke id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/101099474037780480/f3d2eb389d83e1877746b7fe9351e5c3.webp?size=128" data-content="Premium Member" data-position="top center" data-title="IVI Lazarus" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/640018738778865695/9915580e1e5614583509a5c45935b90a.webp?size=128" data-content="Premium Member" data-position="top center" data-title="DeFi Dude" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/807092895320375318/4f351ef4d5a8eb1a3e9b1d25b066ca15.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Jacob. id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/700221407375655002/a_efed5c6bd4fc22e0612a5335730e6bef.webp?size=128" data-content="Premium Member" data-position="top center" data-title=!!Danny id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/275164160273285123/df01d9f6f3adfe17500bf22cf30a970b.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Morata id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/564859369951461406/a_f0c86e4fab34ecea97576ac715551af4.webp?size=128" data-content="Premium Member" data-position="top center" data-title=CamTheHelpDesk id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/793697591249731624/d400b369da774268b9a20f99818420a2.webp?size=128" data-content="Premium Member" data-position="top center" data-title=mky id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/304286082655322113/446d629c002e3169516faab079d20262.webp?size=128" data-content="Premium Member" data-position="top center" data-title=jdorrance id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/755408002529362043/5abd24d749a2010385e93e401d0afd8a.webp?size=128" data-content="Premium Member" data-position="top center" data-title=QueenViper2.0 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/677124527238676480/c84f44b950a195d5148c02a1b8f889b6.webp?size=128" data-content="Premium Member" data-position="top center" data-title="꒷꒦ 𝐀𝐬𝐡𝐢🐰" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/697576293939675137/87587b336faee6c90c28b60f4d418710.webp?size=128" data-content="VIP Member" data-position="top center" data-title=ryon id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/164012972035932160/5b781121c00f6ea61b31232a2889b947.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Almeos id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/428292404160757760/a_d6f70d3012ca642a26a96b3aea0a8234.webp?size=128" data-content="Premium Member" data-position="top center" data-title=mikesツ id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/506513851576221706/a_2126259f4b3533d2a38b51dc8f3ed068.webp?size=128" data-content="Moderator | Support Member | Premium Member | Bug Hunter | Contributor" data-position="top center" data-title=Salvi0 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/523928057350717448/81dbd13e6d0e4d2ad72bae4b70d94ffc.webp?size=128" data-content="Premium Member" data-position="top center" data-title=IntelliPickle id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/463778789076500491/ee95f9181d1c4cc80cb3e3265a28b771.webp?size=128" data-content="Premium Member" data-position="top center" data-title=LUNA13 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/699719087751954482/a_4df193604b192e7c7ca19ac4dc29c50c.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Mo3one0 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/636459489863794698/d424ddd7c78386774cb6f8a18df50231.webp?size=128" data-content="Premium Member" data-position="top center" data-title=ivan_rpz id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/778549588150714368/75e7240a77eb74a4cb2e682418ea2918.webp?size=128" data-content="Premium Member" data-position="top center" data-title=⤖𝐂⬻ id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/193691017432530946/a_a3cc667dd5062d4022198c13a9856c6d.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Kanekay id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/730089041365696713/a_90d6bb3ae4bc0febb0c2dd77ab7b9900.webp?size=128" data-content="Premium Member" data-position="top center" data-title=⨯⸝⸝NotToker id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/548728929779843093/a3f66bd207e9b384a14a7036dc3a8966.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Nitro20 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/353544552071561226/45d49c7d1d441268095267eb32abf6f9.webp?size=128" data-content="Premium Member" data-position="top center" data-title="NiCK RAViN" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/613189351748141097/ca935e2ab1594c522667891c48dbc772.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Alphabet id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/294838480545251328/9d1752b0661feb6b0b852bd6296e60eb.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Ace Tempura" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/393853467258650624/a_1ece4036ee3ed2817b58dc4e6ec8f0c8.webp?size=128" data-content="Premium Member" data-position="top center" data-title="Twitch DivineOG" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/540665711178285104/9d6fc0f2217c36ca29f0cd2168ce8368.webp?size=128" data-content="Premium Member" data-position="top center" data-title=instagram id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/263791409436295168/b6b3a347ea1767ecbdd376688392c6a3.webp?size=128" data-content="Moderator | Support Member | Premium Member | Bug Hunter" data-position="top center" data-title=Mabelyn id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/576514849954070540/e3a5a61461242bde807a2904268ba579.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Toasty id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/400650397456400386/a_7b9ad59c2c4d68df4abc54c32e650f13.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Texas id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/781720661042528267/70036638e44d7f88f393559087519c2c.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Sammy50 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/298213443411116053/69bd961c2e8346ff23250ccf455867e8.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Zun id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/343427678491115521/a_b10a8553fcbd400ef28c04144e118037.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Ibotmealot id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/751919491302162474/69e8522011ebdef6671f2347c27bb716.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Yum id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/728413848192811129/76bcfaec3434c3d2a4dd7c8b7eb948e9.webp?size=128" data-content="VIP Member" data-position="top center" data-title=wobi id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/415619116548751360/8055b1bda26937558b79a85d822bfaea.webp?size=128" data-content="Premium Member" data-position="top center" data-title="bonster ™" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/673716808574042143/a_23ace5cf9e0dbcda7cdb26d531b8d9b5.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Arne id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/701696539021541436/a_642b31bdb159f1abececbad14c148808.webp?size=128" data-content="Premium Member" data-position="top center" data-title=KS id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/719895724535447563/73e90ac2fca38a5870ca99f2a8a0637f.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Lurkz id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/390653689557286913/a_a563cb8be450d1a18f621b6187e4b76f.webp?size=128" data-content="VIP Member" data-position="top center" data-title=saad786 id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/659285872839098368/daa2bfcf5dd4394d5366285bb1b4a74b.webp?size=128" data-content="Premium Member" data-position="top center" data-title=ᑌᒪ丅ᖇᗩ id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/457594130172739586/926450b84402d0cf65bcf29f108590b6.webp?size=128" data-content="Premium Member" data-position="top center" data-title=OGkuro30 id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/131557066975215617/0028f7382dbf7d886261a2bb03bc30ad.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Ghazghkull id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/652170120860270621/07a92c787e60bdf5cb22c6dba9f0bfda.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Baby id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/750221206879469581/a_04fc3774625562d9b562189503f763a9.webp?size=128" data-content="Premium Member" data-position="top center" data-title=RomeoCarter id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/435608131393945620/7297df32921b83029fe7f1106bb90ec5.webp?size=128" data-content="VIP Member" data-position="top center" data-title=Janyérick id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/757451844971790377/59ae825a362320da5c965efaa74cc526.webp?size=128" data-content="Premium Member" data-position="top center" data-title=alejandro id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/407191601496981525/a_5e13d227036b79666765a11faf1953f5.webp?size=128" data-content="Premium Member" data-position="top center" data-title=ilikeapples id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/755629811980042290/19a2f6091051eae10e9d31c99326e790.webp?size=128" data-content="VIP Member" data-position="top center" data-title=&gt;_&lt; id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/132177218968354816/a_64a7d882005e913cfddf7cfed838a985.webp?size=128" data-content="Premium Member" data-position="top center" data-title=myth™ id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/712461844966539266/343826fafe43417716fe1d72c568b525.webp?size=128" data-content="Premium Member" data-position="top center" data-title=Active id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/518063726314913794/508ff675d49338f8db3d4a832f38abb6.webp?size=128" data-content="VIP Member" data-position="top center" data-title=Best id=vip>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/404766869640314884/340eeb4f18bd8e1983fcc951bbc23ef7.webp?size=128" data-content="Premium Member" data-position="top center" data-title="IF Cloud Knows" id=pre>
+<img class=premiumAvatar class="ui avatar image" src="https://cdn.discordapp.com/avatars/225007739762507776/b15953fbb041cfd03ede95b69be534ab.webp?size=128" data-content="Premium Member" data-position="top center" data-title=ShiinaBat id=pre>
+</div>
+<script src="../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="a3d100d4f85c014407d67caf-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'629d6584eebfeadb',m:'296a786730c10e916d6629aee9d1c709c12a2a5a-1614717169-1800-Ad3aHeANGN/bKe3B3U5bkaYaFH2jB9rm1lJzipZ1Sa9WFyhZKQ5mrsnna5yNjj8UXiB7ANB2YPo5g1/tNr7onE/X2JpeE2ex3EhhMBoOCFGNzp96FjeQJ01AlFchXKmTQw==',s:[0x56823ba17b,0x28730c95a5],}})();</script></body>
+<script type="a3d100d4f85c014407d67caf-text/javascript">$(".premiumAvatar").popup(),$("#gayassmultiple").click(function(){$("#pre-more").modal("show")}),document.body.addEventListener("click",async function(t){t.srcElement.id.startsWith("getIntel-")&&(t=t.srcElement.id.split("-")[1],await getIntel(t,"gMLD8qJS-fKre03yi7odPHD2QO-nDPuH92E0"))}),$(".ui.accordion").accordion()</script>
+
+<!-- Mirrored from wickbot.com/premium by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Mar 2021 20:33:17 GMT -->
+</html>
+<footer>
+<style>
+</style>
+<footer style=margin-top:100px;>
+<div class="ui placeholder segment" style="color: #f7f7f7 !important;
+background: #3C3B3F;
+background: -webkit-linear-gradient(to right, rgb(17, 17, 17), rgb(17, 17, 17));
+background: linear-gradient(to right, rgb(17, 17, 17), rgb(17, 17, 17));">
+<div class="ui three column very relaxed stackable grid" style="margin: 15px;padding:10px;">
+<div class="middle aligned column" style="text-align: center;justify-content: center; justify-items: center;margin: 0 auto;">
+<h1>Wick Bot</h1>
+<p><i class="icon copyright outline"></i> Copyright Wick Bot 2019-2021. All rights reserved.
+<br> Wick is not affiliated with Discord.
+</p>
+<div>
+<a href="https://discordapp.com/oauth2/authorize?client_id=536991182035746816&amp;scope=bot&amp;permissions=8" class="ui vertical animated small button" style="display:inline-block;margin: 5px;">
+<div class="visible content">
+<i class="icon hand pointer"></i>
+Invite
+</div>
+<div class="hidden content">
+<i class="icon hand pointer"></i>
+</div>
+</a>
+<a href=https://discord.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fwickbot.com%2Fwauth%2Fcallback&amp;scope=identify%20guilds&amp;code_challenge=p_v2b3C1TepbJiZnAUyHzBIrWw6lyHOkGkRNiQf3thk&amp;code_challenge_method=S256&amp;state=C4k86ztgyOSHLmFt3BiRG8Re&amp;client_id=536991182035746816 class="ui vertical animated small button" style="display:inline-block;margin: 5px;">
+<div class="visible content">
+<i class="icon comment alternate"></i>
+Review
+</div>
+<div class="hidden content">
+<i class="icon comment alternate"></i>
+</div>
+</a>
+<a href=https://discord.gg/8C972nY class="ui vertical animated small button" style="display:inline-block;margin: 5px;">
+<div class="visible content">
+<i class="icon envelope outline"></i>
+Contact
+</div>
+<div class="hidden content">
+<i class="icon envelope outline"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="middle aligned column" style="text-align: left;justify-content: left; justify-items: left;margin: 0 auto;">
+<h1>Useful Links</h1>
+<div class="ui inverted relaxed animated list">
+<a href="https://discordapp.com/oauth2/authorize?client_id=536991182035746816&amp;scope=bot&amp;permissions=8" class=item style="font-weight: normal;">
+<i class="icon plus square outline"></i>
+<div class="middle aligned content">
+<div class=header>
+Add Wick
+</div>
+<div class=description>
+Add Standard Wick to your server
+</div>
+</div>
+</a>
+<a href=https://docs.wickbot.com/ class=item style="font-weight: normal;">
+<i class="icon file outline"></i>
+<div class="middle aligned content">
+<div class=header>
+Documentation
+</div>
+<div class=description>
+Learn how to use Wick Bot efficiently
+</div>
+</div>
+</a>
+<a href=https://discord.gg/8C972nY class=item style="font-weight: normal;">
+<i class="icon question circle outline"></i>
+<div class="middle aligned content">
+<div class=header>
+Join Support Server
+</div>
+<div class=description>
+Join Wick&#39;s lounge and enjoy your time there.
+</div>
+</div>
+</a>
+<a href=premium.html class=item style="font-weight: normal;">
+<i class="icon gem outline"></i>
+<div class="middle aligned content">
+<div class=header>
+Premium
+</div>
+<div class=description>
+Rock Wick Premium in your server and get the best security possible
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="middle aligned column" style="text-align: left;justify-content: left; justify-items: left;margin: 0 auto;">
+<h1>Terms & Policies</h1>
+<div class="ui inverted relaxed animated list">
+<a href=tos.html class=item style="font-weight: normal;">
+<i class="icon ruler"></i>
+<div class="middle aligned content">
+<div class=header>
+Terms Of Service
+</div>
+<div class=description>
+Read what you need to respect when using Wick Bot.
+</div>
+</div>
+</a>
+<a href=privacy.html class=item style="font-weight: normal;">
+<i class="icon file user secret"></i>
+<div class="middle aligned content">
+<div class=header>
+Privacy Policy
+</div>
+<div class=description>
+What do we do with your information.
+</div>
+</div>
+</a>
+<a href=refund.html class=item style="font-weight: normal;">
+<i class="icon money check"></i>
+<div class="middle aligned content">
+<div class=header>
+Refund Policy
+</div>
+<div class=description>
+Check out our stance when it comes to refunding our premium services.
+</div>
+</div>
+</a>
+<a href=cookies.html class=item style="font-weight: normal;">
+<i class="icon cookie"></i>
+<div class="middle aligned content">
+<div class=header>
+Cookies Policy
+</div>
+<div class=description>
+Learn what does Wick do with cookies.
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script type="a3d100d4f85c014407d67caf-text/javascript">const el=document.querySelectorAll("img"),observer=lozad(el);observer.observe()</script>
+</footer>
+</html>
